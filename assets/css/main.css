@@ -1,8 +1,103 @@
 body{
-	background-color: #C4E1E6;
+	background-color: #fff;
 }
 
 .logo{
-	margin: 0.5%;
-	width: 80px;
+	margin: 4%;
+	width: 70px;
+	float: left;
+}
+
+.head-right{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: normal;
+	float: right;
+	margin-right: 6%;
+}
+
+h1{
+	margin-bottom: 1%;
+}
+
+p.right{
+	float: right;
+	font-family: monospace;
+}
+
+hr{
+	width: 90%;
+	background: #808080;
+	height: 1px;
+}
+
+.container{
+	width: 90%;
+}
+
+img[id^="tile"] + figcaption, label.label-tile{
+	font-family: 'Montserrat', sans-serif;
+	font-size: medium;
+	margin-top: 4%;
+}
+
+figure[id^="col-tile"]{
+	cursor: pointer;
+}
+
+img[id^="tile"]{
+	max-height: 80%;
+	max-width: 100%;
+}
+
+.tile{
+	max-height: 80%;
+	max-width: 100%;
+}
+
+.tiles{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.col{
+	text-align: center;
+	margin: 4%;
+	width: 150px;
+	height: 150px;
+}
+
+.content-box{
+	/*height: 300px;*/
+	max-width: 100%;
+	background: black;
+}
+
+/*section.content-box:first-child{
+	background: blue;
+}
+
+section.content-box:nth-child(3){
+	background: red;
+}*/
+
+img[id^="content-tile"]{
+	max-width: 100%;
+}
+
+@media screen and (min-width: 800px){
+	body{
+		margin-left: auto;
+		margin-right: auto;
+		width: 800px;
+	}
+	.logo{
+		margin: 2%;
+	}
+}
+
+@media screen and (max-width: 440px){
+	.col{
+		margin: 2%;
+	}
 }
