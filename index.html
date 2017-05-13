@@ -11,9 +11,12 @@
 
 	<!-- Custom Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat|Titillium+Web" rel="stylesheet">
 	
-	<!-- Linked JS -->
+	<!-- Jquery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	crossorigin="anonymous"></script>
+	<!-- Custom JS -->
 	<script src="assets/js/main.js"></script>
 	<title>Portfolio - Navpreet Ahuja</title>
 </head>
@@ -30,42 +33,58 @@
 	<section id="portfolio">
 		<div class="container">
 			<div class="row">
-				<!-- TODO: render divs and content dynamically -->
-				<section class="content-box" style="display:none">
+				<!-- TODO: render divs and content dynamically from json -->
+				<section class="content-box" style="display:block" id="content-box1">
 					<img src="assets/images/anecdote.png" id="content-tile1">
-					<article></article>
+					<article class="description">
+						<h5>ANECDOTE</h5>
+						<p>
+							Shows trailer of some movies, currently working on to get dynamically generated list of top movies specific to a location.
+							HTML is rendered dynmically from Python codebase.<p class="right">github.com/the-mentalist/anecdote</p>
+						</p>
+					</article>
 				</section>
-				<section class="content-box" style="display:block">
-					<img src="" id="content-tile2">
-					<article></article>
+				<section class="content-box" style="display:none" id="content-box2">
+					<img src="assets/images/orng-m.jpg" id="content-tile2">
+					<article class="description">
+						<h5>Orange Marmalade</h5>
+						<p>
+							Bio-Informatics Web Application, allowing searches through multiple indexes for specific information.
+							Involves Python frameworks - Flask Restful and SQLAlchemy.
+						</p>
+					</article>
 				</section>
-				<section class="content-box" style="display:none">
-					<img src="" id="content-tile3">
-					<article></article>
+				<section class="content-box" style="display:none" id="content-box3">
+					<img src="assets/images/loop-g.jpg" id="content-tile3">
+					<article class="description">
+						<h5>Loop Guitar</h5>
+						<p>
+							Android Application - Currently working on this project.
+						</p>
+					</article>
 				</section>
 			</div>
 			<div class="row">
 				<label class="label-tile">Featured Work</label>
 			</div>
+			<!-- TODO: function call using jquery, alignment on resize -->
 			<div class="row tiles">
-				<figure class="col" id="col-tile1">
+				<figure class="col" id="col-tile1" onclick="showContent(1)">
 					<img src="assets/images/anecdote1.png" alt="Logo1" id="tile1">
 					<figcaption for="tile1">ANECDOTE</figcaption>
 				</figure>
-				<figure class="col" id="col-tile2">
+				<figure class="col" id="col-tile2" onclick="showContent(2)">
 					<img src="assets/images/orange-marmalade.jpg" alt="Logo2" id="tile2">
 					<figcaption for="tile2">ORANGE MARMALADE</figcaption>
 				</figure>
-				<figure class="col" id="col-tile3">
+				<figure class="col" id="col-tile3" onclick="showContent(3)">
 					<img src="assets/images/loop.png" alt="Logo3" id="tile3">
 					<figcaption for="tile3">LOOP GUITAR</figcaption>
 				</figure>
 			</div>
 		</div>
 	</section>
-<!-- 	
-<article></article>
-	<footer></footer> -->
+<!-- <footer></footer> -->
 
 </body>
 </html>

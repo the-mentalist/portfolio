@@ -19,9 +19,23 @@ h1{
 	margin-bottom: 1%;
 }
 
+h2, h3, h4, h5{
+	margin: 0px;
+}
+
+h5{
+	font-weight: bold;
+}
+
 p.right{
 	float: right;
 	font-family: monospace;
+}
+
+.description p{
+	font-family: 'Titillium Web', sans-serif;
+	font-size: smaller;
+	margin-bottom: 0px;
 }
 
 hr{
@@ -49,6 +63,22 @@ img[id^="tile"]{
 	max-width: 100%;
 }
 
+img[id^="tile"]:hover{
+    -webkit-transition: all 100ms ease-in;
+    -webkit-transform: scale(1.05);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.05);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.05);
+    transition: all 200ms ease-in;
+    transform: scale(1.05);
+}
+
+img[id^="content-tile"]{
+	opacity: 0.8;
+	max-width: 100%;
+}
+
 .tile{
 	max-height: 80%;
 	max-width: 100%;
@@ -68,21 +98,20 @@ img[id^="tile"]{
 }
 
 .content-box{
-	/*height: 300px;*/
+	position: relative;
 	max-width: 100%;
 	background: black;
 }
 
-/*section.content-box:first-child{
-	background: blue;
-}
-
-section.content-box:nth-child(3){
-	background: red;
-}*/
-
-img[id^="content-tile"]{
-	max-width: 100%;
+article.description{
+	box-sizing: border-box;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	bottom: 0;
+	height: 45%;
+	width: 100%;
+	color: #fff;
+	padding: 0.5em;
 }
 
 @media screen and (min-width: 800px){
