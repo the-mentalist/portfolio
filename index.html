@@ -16,8 +16,7 @@
 	<!-- Jquery -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	crossorigin="anonymous"></script>
-	<!-- Custom JS -->
-	<script src="assets/js/main.js"></script>
+	
 	<title>Portfolio - Navpreet Ahuja</title>
 </head>
 <body>
@@ -29,12 +28,14 @@
 		</div>
 		
 	</header>
-	<hr>
+	<div class="row">
+		<hr>
+	</div>
 	<section id="portfolio">
 		<div class="container">
 			<div class="row">
 				<!-- TODO: render divs and content dynamically from json -->
-				<section class="content-box" style="display:block" id="content-box1">
+				<section class="content-box" id="content-box1">
 					<img src="assets/images/anecdote.png" id="content-tile1">
 					<article class="description">
 						<h5>ANECDOTE</h5>
@@ -44,7 +45,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="content-box" style="display:none" id="content-box2">
+				<section class="content-box" id="content-box2">
 					<img src="assets/images/orng-m.jpg" id="content-tile2">
 					<article class="description">
 						<h5>Orange Marmalade</h5>
@@ -54,7 +55,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="content-box" style="display:none" id="content-box3">
+				<section class="content-box" id="content-box3">
 					<img src="assets/images/loop-g.jpg" id="content-tile3">
 					<article class="description">
 						<h5>Loop Guitar</h5>
@@ -84,7 +85,9 @@
 			</div>
 		</div>
 	</section>
-<!-- <footer></footer> -->
+	<!-- <footer></footer> -->
+	<!-- Custom JS -->
+	<script src="assets/js/main.js"></script>
 
 </body>
 </html>

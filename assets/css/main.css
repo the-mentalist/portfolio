@@ -9,7 +9,7 @@ body{
 }
 
 .head-right{
-	font-family: 'Open Sans Condensed', sans-serif;
+	font-family: "Open Sans Condensed", sans-serif;
 	font-weight: normal;
 	float: right;
 	margin-right: 6%;
@@ -34,7 +34,7 @@ p.right{
 }
 
 .description p{
-	font-family: 'Titillium Web', sans-serif;
+	font-family: "Titillium Web", sans-serif;
 	font-size: 2.6vw;
 	margin-bottom: 0px;
 }
@@ -50,7 +50,7 @@ hr{
 }
 
 img[id^="tile"] + figcaption, label.label-tile{
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: medium;
 	margin-top: 4%;
 }
