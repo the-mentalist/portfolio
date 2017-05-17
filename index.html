@@ -20,22 +20,20 @@
 	<title>Portfolio - Navpreet Ahuja</title>
 </head>
 <body>
-	<header>
-		<img src="assets/images/udacity_logo.png" class="logo">
-		<div class="head-right">
-			<h1>NAVPREET AHUJA</h1>
-			<p class="right"><strong>FRONT-END NINJA</strong></p>
-		</div>
-		
-	</header>
-	<div class="row">
-		<hr>
-	</div>
-	<section id="portfolio">
-		<div class="container">
+	<div class="container">
+		<header class="row">
+			<div class="col-md-6">
+				<img src="assets/images/udacity_logo.png" class="logo">
+			</div>
+			<div class="head-right col-md-6">
+				<h1>NAVPREET AHUJA</h1>
+				<p class="right"><strong>FRONT-END NINJA</strong></p>
+			</div>
+		</header>
+		<section id="portfolio">
 			<div class="row">
 				<!-- TODO: render divs and content dynamically from json -->
-				<section class="content-box" id="content-box1">
+				<section class="content-box col-md-12" id="content-box1">
 					<img src="assets/images/anecdote.png" id="content-tile1">
 					<article class="description">
 						<h5>ANECDOTE</h5>
@@ -45,7 +43,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="content-box" id="content-box2">
+				<section class="content-box col-md-12" id="content-box2">
 					<img src="assets/images/orng-m.jpg" id="content-tile2">
 					<article class="description">
 						<h5>Orange Marmalade</h5>
@@ -55,7 +53,7 @@
 						</p>
 					</article>
 				</section>
-				<section class="content-box" id="content-box3">
+				<section class="content-box col-md-12" id="content-box3">
 					<img src="assets/images/loop-g.jpg" id="content-tile3">
 					<article class="description">
 						<h5>Loop Guitar</h5>
@@ -66,7 +64,7 @@
 				</section>
 			</div>
 			<div class="row">
-				<label class="label-tile">Featured Work</label>
+				<label class="label-tile col-md-12">Featured Work</label>
 			</div>
 			<!-- TODO: function call using jquery, alignment on resize -->
 			<div class="row tiles">
@@ -83,8 +81,8 @@
 					<figcaption for="tile3">LOOP GUITAR</figcaption>
 				</figure>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 	<!-- <footer></footer> -->
 	<!-- Custom JS -->
 	<script src="assets/js/main.js"></script>

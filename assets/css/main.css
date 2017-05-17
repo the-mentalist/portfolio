@@ -3,7 +3,9 @@ body{
 }
 
 .logo{
-	margin: 4%;
+	margin-right: 4%;
+	margin-bottom: 4%;
+	margin-top: 4%;
 	width: 70px;
 	float: left;
 }
@@ -28,6 +30,11 @@ h5{
 	font-weight: bold;
 }
 
+header{
+	border-bottom: 1px solid #808080;
+	margin-bottom: 2%;
+}
+
 p.right{
 	float: right;
 	font-family: monospace;
@@ -37,12 +44,6 @@ p.right{
 	font-family: "Titillium Web", sans-serif;
 	font-size: 2.6vw;
 	margin-bottom: 0px;
-}
-
-hr{
-	width: 90%;
-	background: #808080;
-	height: 1px;
 }
 
 .container{
@@ -99,9 +100,10 @@ img[id^="content-tile"]{
 }
 
 .content-box{
-	position: relative;
 	max-width: 100%;
 	background: black;
+	padding-left: inherit;
+	padding-right: inherit;
 }
 
 article.description{
